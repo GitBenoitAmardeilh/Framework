@@ -1,0 +1,73 @@
+**** A supprimer !! ****
+ressources / view / accueil.php
+
+**** Listes des services à charger ****
+1- Gestionnaire d'erreurs
+2- Controlleurs Core
+
+
+
+                    switch($keyE){
+
+                        case "EXPT_DIR":
+                            echo "Add Require [EXPT_DIR] - [ ".$keyF." ]</br>";
+                            if($keyF !="AppExceptionsEngine"){
+                                $this->createObjApp( $keyF);
+                            }
+                            break;
+
+                        case "CORE_DIR":
+                            echo "Add Require [CORE_DIR] - [ ".$keyF." ]</br>";
+                            break;
+
+                        case "CONFIG_DIR":
+                            echo "Add Require [CONFIG_DIR] - [ ".$keyF." ]</br>";
+                            break;
+
+                        case "SERVICES_DIR":
+                            echo "Add Require [SERVICES_DIR] - [ ".$keyF." ]</br>";
+                            if($keyF != "AppServices")
+                                $this->createObjApp( $keyF);
+                            break;
+
+                        case "CTRL_DIR":
+                            echo "Add Require [CTRL_DIR] - [ ".$keyF." ]</br>";
+                            break;
+
+                        case "ROUTES_DIR":
+                            echo "Add Require [ROUTES_DIR] - [ ".$keyF." ]</br>";
+                            break;
+
+
+                    }
+
+
+
+
+
+
+array(10) {
+  ["message"]=>
+  string(25) "ROUTE [404] - Unknown URL"
+  ["code"]=>
+  int(0)
+  ["file"]=>
+  string(49) "C:\Users\amard\Projets\Framework\routes\Route.php"
+  ["line"]=>
+  string(0) ""
+  ["lineNumber"]=>
+  int(82)
+  ["class"]=>
+  string(5) "Route"
+  ["url"]=>
+  string(0) ""
+  ["urlList"]=>
+  array(0) {
+  }
+  ["controller"]=>
+  array(0) {
+  }
+  ["action"]=>
+  array(0) {
+  }
+}
